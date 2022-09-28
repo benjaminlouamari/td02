@@ -1,0 +1,17 @@
+package metho_package;
+
+public class Exercice {
+
+	public static void main(String[] args) {
+		
+		int NUMBER = -211321;
+		
+		if(NUMBER < 0) {
+			NUMBER = -NUMBER;
+		}
+		
+		System.out.println(NUMBER);
+
+	}
+
+}
