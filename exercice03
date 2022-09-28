@@ -1,0 +1,40 @@
+package metho_package;
+
+import java.util.Scanner;
+
+public class Exercice {
+
+	public static void main(String[] args) {
+		
+		Scanner clavier = new Scanner(System.in);
+		
+		System.out.println("Entrez un nombre entre 10 et 99:");
+		int NUMBER = clavier.nextInt();
+		
+		clavier.close();
+		
+		if(NUMBER >= 10 && NUMBER <= 99) {
+			int TENTH = NUMBER / 10;
+			int UNIT = NUMBER % 10;
+			
+			if(TENTH % 2 == 0) {
+				System.out.print(TENTH + " est pair ");
+			}
+			else {
+				System.out.print(TENTH + " est impair ");
+			}
+			
+			if(UNIT % 2 == 0) {
+				System.out.print("et " + UNIT + " est pair.");
+			}
+			else {
+				System.out.print("et " + UNIT + " est impair.");
+			}
+			
+		}
+		else {
+			System.out.println("Le nombre entré n'est pas valide !");
+		}
+	}
+
+}
